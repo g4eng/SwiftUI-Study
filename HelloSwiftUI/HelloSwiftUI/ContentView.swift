@@ -2,16 +2,18 @@
 //  ContentView.swift
 //  HelloSwiftUI
 //
-//  Created by gaeng on 2022/01/19.
+//  Created by gaeng on 2022/03/16.
 //
 
 import SwiftUI
 
-// VC와 같은 역할 
+// VC와 같은 역할
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Hello, SwiftUI!")
+            .font(.largeTitle)
+            .foregroundColor(.red).fontWeight(.bold)
+            .colorInvert()
     }
 }
 
