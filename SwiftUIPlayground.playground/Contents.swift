@@ -1,21 +1,18 @@
 //: A UIKit based Playground for presenting user interface
   
-import UIKit
+import SwiftUI
 import PlaygroundSupport
 
-class MyViewController : UIViewController {
-    override func loadView() {
-        let view = UIView()
-        view.backgroundColor = .white
-
-        let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
-        
-        view.addSubview(label)
-        self.view = view
+struct ContentView: View {
+    var body: some View {
+        Text("Hello SwiftUI")
+        Text("Hello ").foregroundColor(.green).italic()
+        + Text("SwiftUI").foregroundColor(.blue).bold()
     }
 }
 // Present the view controller in the Live View window
-PlaygroundPage.current.liveView = MyViewController()
+// liveView 프로퍼티 값에 ContentView 인스턴스를 그냥 넣어주면 에러가 나니까
+// UIHostingController의 rootView에 넣어주자
+// PlaygroundPage.current.liveView = UIHostingController(rootView: ContentView())
+// UIHostingController를 쓰지 않고도 SwiftUI의 뷰를 적용할 수 있는 한 가지 방법이 더 있다.
+PlaygroundPage.current.setLiveView(ContentView())
