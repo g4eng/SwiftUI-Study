@@ -8,6 +8,8 @@ struct ContentView: View {
         Text("Hello SwiftUI")
         Text("Hello ").foregroundColor(.green).italic()
         + Text("SwiftUI").foregroundColor(.blue).bold()
+        Text("Hello ✋\n SwiftUI 😀").font(.title) // 좌측 이미지
+        Text("Hello ✋\n SwiftUI 😀").font(.title).lineLimit(1) // 우측 이미지
     }
 }
 // Present the view controller in the Live View window
