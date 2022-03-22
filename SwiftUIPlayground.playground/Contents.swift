@@ -38,8 +38,19 @@ struct ContentView: View {
             + Text(" 조정도 쉽게 가능합니다.").baselineOffset(8)  // 기준선
                 .font(.system(size: 16))
         }
+        
+        HStack {    // 가로 방향으로 뷰를 배열하는 컨테이너 뷰
+            Image("SwiftUI")        // 원본 100 X 100
+            Image("SwiftUI").resizable()
+                .frame(width: 50, height: 50)
+            Image("SwiftUI").resizable()
+                .frame(width: 200, height: 200)
+        }
     }
 }
+
+
+
 // Present the view controller in the Live View window
 // liveView 프로퍼티 값에 ContentView 인스턴스를 그냥 넣어주면 에러가 나니까
 // UIHostingController의 rootView에 넣어주자
