@@ -25,4 +25,5 @@
 * **Chapter 2: 뷰 구성하기**
 
 >|Chatper|    Subject    |Note|
+>|-------|---------------|----|
 >| 2-1 |[기본기 다지기](https://github.com/gaeng2y/SwiftUI-Study/blob/main/contents/2-1.%EA%B8%B0%EB%B3%B8%EA%B8%B0%20%EB%8B%A4%EC%A7%80%EA%B8%B0.md)|SwiftUI 기본 뷰 및 수식어|
