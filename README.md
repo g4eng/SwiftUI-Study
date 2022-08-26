@@ -7,10 +7,7 @@
 * Contents
 
 ## Tools
-* 📖 [Combine: Asynchronous Programming with Swift](https://www.raywenderlich.com/books/combine-asynchronous-programming-with-swift)
-* macOS Mojiave(10.14)
-* Xcode 11 or later
-* iOS 13 later
+* 📖 [스윗한 SwiftUI](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=237335978&start=slayer)
 * Swift에 대한 중급 레벨 지식
 
 ## Contents
