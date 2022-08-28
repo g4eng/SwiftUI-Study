@@ -8,6 +8,8 @@
 
 ## Tools
 * 📖 [스윗한 SwiftUI](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=237335978&start=slayer)
+* macOS Catalina 이상
+* Xcode 11.0 이상
 * Swift에 대한 중급 레벨 지식
 
 ## Contents
