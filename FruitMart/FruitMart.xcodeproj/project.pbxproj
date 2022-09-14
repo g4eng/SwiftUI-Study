@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F019B71328D27663004077CC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71228D27663004077CC /* ColorExtension.swift */; };
+		F019B71728D27942004077CC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71628D27942004077CC /* Product.swift */; };
 		F077A94928D0FA600071C95A /* FruitMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A94828D0FA600071C95A /* FruitMartApp.swift */; };
 		F077A94B28D0FA600071C95A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A94A28D0FA600071C95A /* ContentView.swift */; };
 		F077A94D28D0FA600071C95A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F077A94C28D0FA600071C95A /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		F019B71228D27663004077CC /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F019B71628D27942004077CC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F077A94528D0FA600071C95A /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F077A94828D0FA600071C95A /* FruitMartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitMartApp.swift; sourceTree = "<group>"; };
 		F077A94A28D0FA600071C95A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,22 @@
 				F019B71228D27663004077CC /* ColorExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F019B71428D2792A004077CC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F019B71128D27655004077CC /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F019B71528D27939004077CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F019B71628D27942004077CC /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F077A93C28D0FA600071C95A = {
@@ -94,7 +112,8 @@
 		F077A95628D0FA650071C95A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F019B71128D27655004077CC /* Extension */,
+				F019B71528D27939004077CC /* Model */,
+				F019B71428D2792A004077CC /* Helper */,
 				F077A95728D0FA6D0071C95A /* User Interface */,
 			);
 			path = Source;
@@ -213,6 +232,7 @@
 				F077A96628D0FAC70071C95A /* Home.swift in Sources */,
 				F077A94928D0FA600071C95A /* FruitMartApp.swift in Sources */,
 				F019B71328D27663004077CC /* ColorExtension.swift in Sources */,
+				F019B71728D27942004077CC /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
