@@ -29,4 +29,3 @@ struct Home_Previews: PreviewProvider {
           .preferredColorScheme(.light)
   }
 }
-
