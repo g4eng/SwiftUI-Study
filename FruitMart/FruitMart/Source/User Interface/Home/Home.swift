@@ -13,11 +13,21 @@ struct Home: View {
     
   var body: some View {
       NavigationView {
-          List(store.products) { product in
-              NavigationLink(destination: Text("상세 정보")) {
-                  ProductRow(product: product)
-              }
+          VStack {
+              ExtractedView()
+              Text("2")
+                  .fontWeight(.medium)
+              Text("3")
+                  .fontWeight(.medium)
           }
+          
+//          List(store.products) { product in
+//              NavigationLink(destination: Text("상세 정보")) {
+////                  ProductRow(product: product)
+//
+//
+//              }
+//          }
           .navigationTitle("과일마트")
       }
   }
@@ -28,4 +38,11 @@ struct Home_Previews: PreviewProvider {
       Home(store: Store())
           .preferredColorScheme(.light)
   }
+}
+
+struct ExtractedView: View {
+    var body: some View {
+        Text("1")
+            .fontWeight(.medium)
+    }
 }
