@@ -12,6 +12,7 @@
 		F019B71B28D4B9C1004077CC /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71A28D4B9C1004077CC /* BundleExtension.swift */; };
 		F019B71D28D4CDED004077CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71C28D4CDED004077CC /* Store.swift */; };
 		F019B71F28D4D0D7004077CC /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71E28D4D0D7004077CC /* ProductDetailView.swift */; };
+		F0363F3C28DA03B90055BEA7 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0363F3B28DA03B90055BEA7 /* Preview.swift */; };
 		F077A94928D0FA600071C95A /* FruitMartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A94828D0FA600071C95A /* FruitMartApp.swift */; };
 		F077A94B28D0FA600071C95A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A94A28D0FA600071C95A /* ContentView.swift */; };
 		F077A94D28D0FA600071C95A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F077A94C28D0FA600071C95A /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		F019B71A28D4B9C1004077CC /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		F019B71C28D4CDED004077CC /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F019B71E28D4D0D7004077CC /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		F0363F3B28DA03B90055BEA7 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		F077A94528D0FA600071C95A /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F077A94828D0FA600071C95A /* FruitMartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitMartApp.swift; sourceTree = "<group>"; };
 		F077A94A28D0FA600071C95A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		F019B71428D2792A004077CC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F0363F3A28DA03AB0055BEA7 /* CustomView */,
 				F019B71128D27655004077CC /* Extension */,
 			);
 			path = Helper;
@@ -77,6 +80,14 @@
 				F019B71C28D4CDED004077CC /* Store.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F0363F3A28DA03AB0055BEA7 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F0363F3B28DA03B90055BEA7 /* Preview.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		F077A93C28D0FA600071C95A = {
@@ -238,6 +249,7 @@
 			files = (
 				F077A96728D0FAC70071C95A /* ProductRow.swift in Sources */,
 				F019B71B28D4B9C1004077CC /* BundleExtension.swift in Sources */,
+				F0363F3C28DA03B90055BEA7 /* Preview.swift in Sources */,
 				F077A94B28D0FA600071C95A /* ContentView.swift in Sources */,
 				F019B71D28D4CDED004077CC /* Store.swift in Sources */,
 				F077A96628D0FAC70071C95A /* Home.swift in Sources */,

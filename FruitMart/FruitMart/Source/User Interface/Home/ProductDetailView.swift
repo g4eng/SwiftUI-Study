@@ -108,8 +108,12 @@ struct ProductDetailView: View {
 
 struct ProductDetailView_Previews: PreviewProvider {
   static var previews: some View {
-      ProductDetailView(product: productSamples[1])
-          .preferredColorScheme(.light)
+      let source1 = ProductDetailView(product: productSamples[0])
+      let source2 = ProductDetailView(product: productSamples[1])
+      return Group {
+          Preview(source: source1)
+          Preview(source: source2, devices: [.iPhone11Pro], displayDarkMode: false)
+      }
   }
 }
 
