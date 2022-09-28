@@ -9,14 +9,13 @@ import SwiftUI
 
 struct Preview<V: View>: View {
     enum Device: String, CaseIterable {
-        case iPhone8 = "iPhone 8"
-        case iPhone11 = "iPhone 11"
-        case iPhone11Pro = "iPhone 11 Pro"
-        case iPhone11ProMax = "iPhone 11 Pro Max"
+        case iPhone14 = "iPhone 14"
+        case iPhone14Pro = "iPhone 14 Pro"
+        case iPhone14ProMax = "iPhone 14 Pro Max"
     }
     
     let source: V   // 프리뷰에서 표현될 뷰
-    var devices: [Device] = [.iPhone11Pro, .iPhone11ProMax, .iPhone8]       // 1. 프리뷰에 렌더링할 기기에 대한 기본값 정의
+    var devices: [Device] = [.iPhone14Pro, .iPhone14ProMax]       // 1. 프리뷰에 렌더링할 기기에 대한 기본값 정의
     var displayDarkMode: Bool = true
     
     var body: some View {

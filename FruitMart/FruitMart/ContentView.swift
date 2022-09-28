@@ -7,20 +7,35 @@
 
 import SwiftUI
 
+class User: ObservableObject {
+    let name = "User name"
+    @Published var score = 0
+}
+
 struct ContentView: View {
+    @ObservedObject var user: User
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 30) {
+//            Toggle(isOn: $isFavorite) {
+//                Text("isFavorite: \(isFavorite.description)")
+//            }
+//
+//            Stepper("Count: \(count)", value: $count)
+            Text(user.name)
+            
+            Button {
+                self.user.score += 1
+            } label: {
+                Text(user.score.description)
+            }
+
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(user: User())
     }
 }
