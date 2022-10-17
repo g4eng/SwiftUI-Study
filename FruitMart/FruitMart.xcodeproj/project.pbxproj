@@ -22,6 +22,7 @@
 		F077A96128D0FAAE0071C95A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F077A95E28D0FAAE0071C95A /* LaunchScreen.storyboard */; };
 		F077A96628D0FAC70071C95A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A96428D0FAC70071C95A /* Home.swift */; };
 		F077A96728D0FAC70071C95A /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A96528D0FAC70071C95A /* ProductRow.swift */; };
+		F094AE4C28FD9C3200BA86AE /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094AE4B28FD9C3200BA86AE /* QuantitySelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F077A96028D0FAAE0071C95A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F077A96428D0FAC70071C95A /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F077A96528D0FAC70071C95A /* ProductRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		F094AE4B28FD9C3200BA86AE /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				F077A96428D0FAC70071C95A /* Home.swift */,
 				F077A96528D0FAC70071C95A /* ProductRow.swift */,
 				F019B71E28D4D0D7004077CC /* ProductDetailView.swift */,
+				F094AE4B28FD9C3200BA86AE /* QuantitySelector.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				F077A96728D0FAC70071C95A /* ProductRow.swift in Sources */,
 				F019B71B28D4B9C1004077CC /* BundleExtension.swift in Sources */,
 				F0363F3C28DA03B90055BEA7 /* Preview.swift in Sources */,
+				F094AE4C28FD9C3200BA86AE /* QuantitySelector.swift in Sources */,
 				F077A94B28D0FA600071C95A /* ContentView.swift in Sources */,
 				F019B71D28D4CDED004077CC /* Store.swift in Sources */,
 				F077A96628D0FAC70071C95A /* Home.swift in Sources */,
