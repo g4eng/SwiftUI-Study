@@ -54,10 +54,7 @@ struct ProductDetailView: View {
                 
                 Spacer()
                 
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(Color.peach)
-                    .frame(width: 32, height: 32)
+                FavoriteButton(product: product)
             }
             
             Text(splitText(product.description))
@@ -70,7 +67,7 @@ struct ProductDetailView: View {
         let price = quantity * product.price
         return HStack {
             (Text("₩") // 통화 기호는 작게 나타내고 가격만 크게 표시
-             + Text("\(product.price)")
+             + Text("\(price)")
                 .font(.title)
             )
             .fontWeight(.medium)
