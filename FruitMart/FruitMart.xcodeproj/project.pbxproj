@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F007B7E328FF4EFE005248A5 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007B7E228FF4EFE005248A5 /* FavoriteButton.swift */; };
+		F007B7E528FF5CFD005248A5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007B7E428FF5CFD005248A5 /* Order.swift */; };
 		F019B71328D27663004077CC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71228D27663004077CC /* ColorExtension.swift */; };
 		F019B71728D27942004077CC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71628D27942004077CC /* Product.swift */; };
 		F019B71B28D4B9C1004077CC /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019B71A28D4B9C1004077CC /* BundleExtension.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		F007B7E228FF4EFE005248A5 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		F007B7E428FF5CFD005248A5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F019B71228D27663004077CC /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		F019B71628D27942004077CC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F019B71A28D4B9C1004077CC /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				F019B71628D27942004077CC /* Product.swift */,
 				F019B71C28D4CDED004077CC /* Store.swift */,
+				F007B7E428FF5CFD005248A5 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				F077A96628D0FAC70071C95A /* Home.swift in Sources */,
 				F077A94928D0FA600071C95A /* FruitMartApp.swift in Sources */,
 				F019B71328D27663004077CC /* ColorExtension.swift in Sources */,
+				F007B7E528FF5CFD005248A5 /* Order.swift in Sources */,
 				F019B71728D27942004077CC /* Product.swift in Sources */,
 				F019B71F28D4D0D7004077CC /* ProductDetailView.swift in Sources */,
 			);

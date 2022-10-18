@@ -10,6 +10,8 @@ import SwiftUI
 struct ProductDetailView: View {
     let product: Product
     @State private var quantity: Int = 1
+    @State private var showingAlert: Bool = false
+    @EnvironmentObject private var store: Store
     
     var body: some View {
         VStack(spacing: 0) {
@@ -18,6 +20,9 @@ struct ProductDetailView: View {
         }
         .edgesIgnoringSafeArea(.top)
         // 기본적으로 뷰는 안전 영역을 기준으로 레이아웃 구성하지만, 이 수식어에 all, top, leading, bottom, trailing, vertical, horizontal 같은 Edge.Set 타입을 전달하여 지정한 방향의 안전 영역을 무시할 수 있다
+        .alert(isPresented: $showingAlert) {
+            confirmAlert
+        }
     }
     
     var productImage: some View {
@@ -79,7 +84,9 @@ struct ProductDetailView: View {
     }
     
     var placeOrderButton: some View {
-        Button(action: { }) {
+        Button {
+            self.showingAlert = true
+        } label: {
             Capsule()
                 .fill(Color.peach)
             // 너비는 주어진 공간을 최대로 사용하고 높이는 최소, 최대치 지정
@@ -103,6 +110,20 @@ struct ProductDetailView: View {
         let lhsString = text[..<afterSpaceIdx].trimmingCharacters(in: .whitespaces)
         let rhsString = text[afterSpaceIdx...].trimmingCharacters(in: .whitespaces)
         return String(lhsString + "\n" + rhsString)
+    }
+    
+    var confirmAlert: Alert {
+        Alert(title: Text("주문 확인"),
+              message: Text("\(product.name)을(를) \(quantity)개 구매하겠습니까?"),
+              primaryButton: .default(Text("확인"), action: {
+                // 주문 기능 구현 예정
+                self.placeOrder()
+              }),
+              secondaryButton: .cancel(Text("취소")))
+    }
+    
+    func placeOrder() {
+        store.placeOrder(product: product, quantity: quantity)
     }
 }
 
