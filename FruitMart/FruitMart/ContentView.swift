@@ -55,3 +55,14 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct CustomViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.title)
+            .foregroundColor(.white)
+            .padding()
+            .background(Rectangle().fill(.gray))
+            .border(.blue, width: 2)
+    }
+}
