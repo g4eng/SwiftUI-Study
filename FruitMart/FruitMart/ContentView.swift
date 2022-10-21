@@ -23,8 +23,6 @@ struct ContentView: View {
         } content: {
             PresentedView()
         }
-
-
     }
 }
 
@@ -53,16 +51,5 @@ struct PresentedView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-struct CustomViewModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .font(.title)
-            .foregroundColor(.white)
-            .padding()
-            .background(Rectangle().fill(.gray))
-            .border(.blue, width: 2)
     }
 }
