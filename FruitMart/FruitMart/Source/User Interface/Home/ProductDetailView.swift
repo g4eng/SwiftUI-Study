@@ -27,9 +27,7 @@ struct ProductDetailView: View {
     
     var productImage: some View {
         GeometryReader { _ in
-            Image(self.product.imageName)
-                .resizable()
-                .scaledToFill()
+            ResizedImage(self.product.imageName)
         }
     }
     
@@ -133,7 +131,6 @@ struct ProductDetailView_Previews: PreviewProvider {
       let source2 = ProductDetailView(product: productSamples[1])
       return Group {
           Preview(source: source1)
-          Preview(source: source2, devices: [.iPhone14Pro], displayDarkMode: false)
       }
   }
 }

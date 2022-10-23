@@ -19,13 +19,14 @@ struct FavoriteButton: View {
         Button {
             self.store.toggleFavorite(of: self.product)
         } label: {
-            Image(systemName: imageName)
-                .imageScale(.large)
-                .foregroundColor(.peach)
-                .frame(width: 32, height: 32)
-                .onTapGesture {
-                    self.store.toggleFavorite(of: self.product)
-                }
+            Symbol(imageName,
+                   scale: .large,
+                   color: .peach
+            )
+            .frame(width: 32, height: 32)
+            .onTapGesture {
+                self.store.toggleFavorite(of: self.product)
+            }
         }
     }
 }
